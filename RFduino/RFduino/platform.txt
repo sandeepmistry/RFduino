@@ -1,9 +1,9 @@
 
 # RFduino compile variables
-# ------------------------- 
+# -------------------------
 
 name=RFduino Boards
-compiler.path={runtime.ide.path}/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/
+compiler.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
 compiler.c.cmd=arm-none-eabi-gcc
 compiler.c.flags=-c -g -Os -w -ffunction-sections -fdata-sections -fno-builtin -MMD
 compiler.c.elf.cmd=arm-none-eabi-g++
@@ -58,5 +58,5 @@ tools.RFDLoader.cmd=RFDLoader
 tools.RFDLoader.cmd.windows=RFDLoader.exe
 tools.RFDLoader.upload.params.verbose=
 tools.RFDLoader.upload.params.quiet=
-tools.RFDLoader.path={runtime.ide.path}/hardware/arduino/RFduino
+tools.RFDLoader.path={runtime.hardware.path}/RFduino
 tools.RFDLoader.upload.pattern="{path}/{cmd}" -q {serial.port} "{build.path}/{build.project_name}.hex"

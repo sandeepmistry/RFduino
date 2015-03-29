@@ -2,7 +2,7 @@
 RFduino.name=RFduino
 RFduino.build.mcu=cortex-m0
 RFduino.build.f_cpu=16000000
-RFduino.build.core=arduino
+RFduino.build.core=RFduino
 RFduino.build.extra_flags=-mthumb -D__RFduino__
 RFduino.build.ldscript=linker_scripts/gcc/RFduino.ld
 RFduino.build.variant=RFduino
